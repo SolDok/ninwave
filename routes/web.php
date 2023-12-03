@@ -17,5 +17,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::middleware('auth')->prefix('flashcards')->group(function() {
     Route::get('/',[FlashcardsController::class,'index'])->name('flashcards');
-
+    Route::post('/store',[FlashcardsController::class,'store'])->name('flashcards.store');
 });

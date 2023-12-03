@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('reading');
             $table->string('translate');
             $table->string('img_path')->nullable();
+            $table->timestamps();
         });
     }
 

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\flashcard;
+use App\Models\Flashcard;
 use Illuminate\Http\Request;
 
 class FlashCardsController extends Controller
@@ -35,7 +35,12 @@ class FlashCardsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $flashcard = new Flashcard();
+        $flashcard->word = $request->word;
+        $flashcard->reading = $request->reading;
+        $flashcard->translate = $request->translate;
+        $flashcard->save();
+        return redirect()->to('flashcards');
     }
 
     /**
