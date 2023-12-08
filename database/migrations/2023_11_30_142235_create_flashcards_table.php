@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('word');
             $table->string('reading');
-            $table->string('translate');
+            $table->string('translating');
             $table->string('img_path')->nullable();
             $table->timestamps();
         });

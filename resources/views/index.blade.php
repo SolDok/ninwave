@@ -8,7 +8,7 @@
             <p>Цель данного проекта - помощь в изучении японского языка.</p>
             <Ul>
                 <li>
-                    <a href="{{ route('flashcards') }}">Учить карточки</a>
+                    <a  href="{{ route('flashcards') }}">Учить карточки</a>
                 </li>
                 <li>
                     <a href="">Учить фразы</a>
@@ -18,6 +18,9 @@
                 </li>
                 <li>
                     <a href="">Грамматика</a>
+                </li>
+                <li>
+                    <a href="{{ route('flashcards') }}">{{__('All Flashcards')}}</a>
                 </li>
             </Ul>
         </div>
